@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title> MathJax </title>
+    <style type="text/css">
+        p{font-size:25}
+        body { background-image:url("../../../equationBackgound.png"); }
+    </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+           extensions: ["tex2jax.js"],
+           jax: ["input/TeX", "output/HTML-CSS"],
+           tex2jax: {
+           preview: "none",
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+           processEscapes: true },
+           messageStyle: "none",
+           displayAlign: "left",
+           "HTML-CSS": { imageFont: null }
+        });
+        </script>
+    <script type="text/javascript" src="../../../MathJax/MathJax.js"></script>
+</head>
+<body>
+    <script>
+//      document.body.style.backgroundColor="#6cc0e5";
+    </script>
+    <p>
+    <script type="math/tex; mode=display">
+
+        \int {\sin xdx}  =  - \cos x + C\\[1cm]
+        \int {\cos xdx}  = \sin x + C\\[1cm]
+        \int {{{\sec }^2}xdx = } \tan x + C\\[1cm]
+        \int {{{\csc }^2}xdx = }  - \cot x + C\\[1cm]
+        \int {\sec x\tan xdx = \sec x + C}\\[1cm]
+        \int {\csc x\cot xdx =  - \csc x + C}\\[1cm]
+    </script>
+    </p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title> MathJax </title>
+    <style type="text/css">
+        p{font-size:25}
+        body { background-image:url("../../../equationBackgound.png"); }
+        </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+           extensions: ["tex2jax.js"],
+           jax: ["input/TeX", "output/HTML-CSS"],
+           tex2jax: {
+           preview: "none",
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+           processEscapes: true },
+            messageStyle: "none",
+            displayAlign: "left",
+           "HTML-CSS": { imageFont: null }
+        });
+        </script>
+    <script type="text/javascript" src="../../../MathJax/MathJax.js"></script>
+</head>
+<body>
+    <script>
+        document.body.style.backgroundColor="#6cc0e5";
+    </script>
+    <p>
+    <script type="math/tex; mode=display">
+        W = n{C_V}({T_1} - {T_2})\\[1cm]
+        W = {{{C_V}} \over R}({p_1}{V_1} - {p_2}{V_2})\\[1cm]
+        W = {1 \over {\lambda  - 1}}({p_1}{V_1} - {p_2}{V_2})\\[1cm]
+        </script>
+    </p>
+</body>
+</html>

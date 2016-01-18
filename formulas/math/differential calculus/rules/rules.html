@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title> MathJax </title>
+    <style type="text/css">
+        p{font-size:25}
+        body { background-image:url("../../../equationBackgound.png"); }
+        </style>
+    <meta name="viewport" content="user-scalable=no, width=device-width" />
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+           extensions: ["tex2jax.js"],
+           jax: ["input/TeX", "output/HTML-CSS"],
+           tex2jax: {
+            preview: "none",
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+           processEscapes: true },
+            messageStyle: "none",
+            displayAlign: "left",
+           "HTML-CSS": { imageFont: null }
+        });
+        </script>
+    <script type="text/javascript" src="../../../MathJax/MathJax.js"></script>
+</head>
+<body>
+    <script>
+        document.body.style.backgroundColor="#6cc0e5";
+
+    </script>
+    <p>
+    <script type="math/tex; mode=display">
+        {d \over {dx}}C = 0\\[1cm]
+        {d \over {dx}}{x^n} = n{x^{n - 1}}\\[1cm]
+        {d \over {dx}}(f(x) \pm g(x)) = f'(x) \pm g'(x)\\[1cm]
+        {d \over {dx}}f(x)g(x) = g(x)f'(x) + f(x)g'(x)\\[1cm]
+        {d \over {dx}}f(g(x)) = f'(g(x)) \cdot g'(x)\\[1cm]
+    </script>
+    </p>
+</body>
+</html>

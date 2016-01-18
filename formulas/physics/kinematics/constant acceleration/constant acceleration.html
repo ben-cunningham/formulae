@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title> MathJax </title>
+    <style type="text/css">
+        p{font-size:25}
+        body { background-image:url("../../../equationBackgound.png"); }
+        </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+           extensions: ["tex2jax.js"],
+           jax: ["input/TeX", "output/HTML-CSS"],
+           tex2jax: {
+           preview: "none",
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+           processEscapes: true },
+            messageStyle: "none",
+            displayAlign: "left",
+           "HTML-CSS": { imageFont: null }
+        });
+        </script>
+    <script type="text/javascript" src="../../../MathJax/MathJax.js"></script>
+</head>
+<body>
+    <script>
+        document.body.style.backgroundColor="#6cc0e5";
+    </script>
+    <p>
+    <script type="math/tex; mode=display">
+        {v_x} = {v_{0x}} + {a_x}t\\[1cm]
+        {a_x} = {{d{v_x}} \over {dt}}\\[1cm]
+        x = {x_0} + {v_0}t + {1 \over 2}{a_x}{t^2}\\[1cm]
+        {v_x}^2 = {v_0}^2 + 2{a_x}(x - {x_0})\\[1cm]
+        x - {x_0} = \left( {{{{v_{0x}} + {v_x}} \over 2}} \right)t\\[1cm]
+        </script>
+    </p>
+</body>
+</html>

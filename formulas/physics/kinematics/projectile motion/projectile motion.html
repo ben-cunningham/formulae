@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title> MathJax </title>
+    <style type="text/css">
+        p{font-size:25}
+        body { background-image:url("../../../equationBackgound.png"); }
+        </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+           extensions: ["tex2jax.js"],
+           jax: ["input/TeX", "output/HTML-CSS"],
+           tex2jax: {
+           preview: "none",
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+           processEscapes: true },
+            messageStyle: "none",
+            displayAlign: "left",
+           "HTML-CSS": { imageFont: null }
+        });
+        </script>
+    <script type="text/javascript" src="../../../MathJax/MathJax.js"></script>
+</head>
+<body>
+    <script>
+        document.body.style.backgroundColor="#6cc0e5";
+    </script>
+    <p>
+    <script type="math/tex; mode=display">
+        x = ({v_0}\cos \theta )t\\[1cm]
+        y = ({v_0}\sin \theta )t - {1 \over 2}g{t^2}\\[1cm]
+        {v_x} = {v_0}\cos \theta \\[1cm]
+        {v_y} = {v_0}\sin \theta  - gt\\[1cm]
+        </script>
+    </p>
+</body>
+</html>

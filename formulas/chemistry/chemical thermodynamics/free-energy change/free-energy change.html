@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title> MathJax </title>
+    <style type="text/css">
+        p{font-size:25}
+        body { background-image:url("../../../equationBackgound.png"); }
+        </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+           extensions: ["tex2jax.js"],
+           jax: ["input/TeX", "output/HTML-CSS"],
+           tex2jax: {
+           preview: "none",
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+           processEscapes: true },
+            messageStyle: "none",
+            displayAlign: "left",
+           "HTML-CSS": { imageFont: null }
+                           
+        });
+        </script>
+    <script type="text/javascript" src="../../../MathJax/MathJax.js"></script>
+</head>
+<body>
+    <script>
+        document.body.style.backgroundColor="#6cc0e5";
+    </script>
+    <p>
+    <script type="math/tex; mode=display">
+        \Delta G = \Delta H - T\Delta S\\[1cm]
+        \Delta G_{{\rm{rxn}}}^{\rm{O}} = \sum {n\Delta G_f^{\rm{O}}({\rm{products}}) - } \sum {m\Delta G_f^{\rm{O}}({\rm{reactants}})}\\[1cm]
+        \Delta G =  - {w_{\max }}\\[1cm]
+        \Delta G = \Delta {G^{\rm O}} + RT\ln Q\\[1cm]
+        \Delta {G^{\rm O}} =  - RT\ln K\\[1cm]
+    </script>
+    </p>
+</body>
+</html>

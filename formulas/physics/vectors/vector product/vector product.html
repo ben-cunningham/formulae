@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title> MathJax </title>
+    <style type="text/css">
+        p{font-size:25}
+        body { background-image:url("../../../equationBackgound.png"); }
+        </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+           extensions: ["tex2jax.js"],
+           jax: ["input/TeX", "output/HTML-CSS"],
+           tex2jax: {
+           preview: "none",
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+           processEscapes: true },
+            messageStyle: "none",
+            displayAlign: "left",
+           "HTML-CSS": { imageFont: null }
+        });
+        </script>
+    <script type="text/javascript" src="../../../MathJax/MathJax.js"></script>
+</head>
+<body>
+    <script>
+        document.body.style.backgroundColor="#6cc0e5";
+    </script>
+    <p>
+    <script type="math/tex; mode=display">
+        \overrightarrow A  \times \overrightarrow B  = AB\sin \phi  \\[1cm]
+        {C_x} = {A_y}{B_z} - {A_z}{B_y}\\[1cm]
+        {C_y} = {A_z}{B_x} - {A_x}{B_z}\\[1cm]
+        {C_z} = {A_x}{B_y} - {A_y}{B_x}\\[1cm]
+    </script>
+    </p>
+</body>
+</html>

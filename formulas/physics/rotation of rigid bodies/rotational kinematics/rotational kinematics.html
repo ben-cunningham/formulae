@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title> MathJax </title>
+    <style type="text/css">
+        p{font-size:25}
+        body { background-image:url("../../../equationBackgound.png"); }
+        </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+           extensions: ["tex2jax.js"],
+           jax: ["input/TeX", "output/HTML-CSS"],
+           tex2jax: {
+           preview: "none",
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+           processEscapes: true },
+            messageStyle: "none",
+            displayAlign: "left",
+           "HTML-CSS": { imageFont: null }
+        });
+        </script>
+    <script type="text/javascript" src="../../../MathJax/MathJax.js"></script>
+</head>
+<body>
+    <script>
+        document.body.style.backgroundColor="#6cc0e5";
+    </script>
+    <p>
+    <script type="math/tex; mode=display">
+        \omega  = {{d\theta } \over {dt}} \\[1cm]
+        {a_z} = {{d\omega } \over {dt}} = {{{d^2}\theta } \over {d{t^2}}}\\[1cm]
+        \theta  = {\theta _0} + {\omega _{0z}}t + {1 \over 2}{a_z}{t^2}\\[1cm]
+        \theta  - {\theta _0} = {1 \over 2}({\omega _{0z}} + {\omega _z})t\\[1cm]
+        {\omega _z} = {\omega _{0z}} + {a_z}t\\[1cm]
+        {\omega _z}^2 = {\omega _{0z}}^2 + 2{a_z}(\theta  - {\theta _0})\\[1cm]
+    </script>
+    </p>
+</body>
+</html>

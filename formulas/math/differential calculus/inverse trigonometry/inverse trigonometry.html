@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title> MathJax </title>
+    <style type="text/css">
+        p{font-size:25}
+        body { background-image:url("../../../equationBackgound.png"); }
+        </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+           extensions: ["tex2jax.js"],
+           jax: ["input/TeX", "output/HTML-CSS"],
+           tex2jax: {
+            preview: "none",
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+           processEscapes: true },
+           messageStyle: "none",
+           displayAlign: "left",
+           "HTML-CSS": { imageFont: null }
+        });
+        </script>
+    <script type="text/javascript" src="../../../MathJax/MathJax.js"></script>
+</head>
+<body>
+    <script>
+        document.body.style.backgroundColor="#6cc0e5";
+    </script>
+    <p>
+    <script type="math/tex; mode=display">
+        {d \over {dx}}{\sin ^{ - 1}}x = {1 \over {\sqrt {1 - {x^2}} }}\\[1cm]
+        {d \over {dx}}{\cos ^{ - 1}}x  - {1 \over {\sqrt {1 - {x^2}} }}\\[1cm]
+        {d \over {dx}}{\tan ^{ - 1}}x {1 \over {1 + {x^2}}}\\[1cm]
+        {d \over {dx}}{\csc ^{ - 1}}x =  - {1 \over {\left| x \right|\sqrt {{x^2} - 1} }}\\[1cm]
+        {d \over {dx}}{\sec ^{ - 1}}x = {1 \over {\left| x \right|\sqrt {{x^2} - 1} }}\\[1cm]
+        {d \over {dx}}{\cot ^{ - 1}}x =  - {1 \over {1 + {x^2}}}\\[1cm]
+    </script>
+    </p>
+</body>
+</html>

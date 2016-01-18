@@ -1,0 +1,9 @@
+Newton’s first law
+Newton’s second law
+Newton’s third law
+Weight
+Friction
+Coulomb’s law
+Electric field
+Magnetic field
+Gravitational force

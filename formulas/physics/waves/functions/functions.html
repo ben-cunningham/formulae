@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title> MathJax </title>
+    <style type="text/css">
+        p{font-size:25}
+        body { background-image:url("../../../equationBackgound.png"); }
+        </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+           extensions: ["tex2jax.js"],
+           jax: ["input/TeX", "output/HTML-CSS"],
+           tex2jax: {
+           preview: "none",
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+           processEscapes: true },
+            messageStyle: "none",
+            displayAlign: "left",
+           "HTML-CSS": { imageFont: null }
+        });
+        </script>
+    <script type="text/javascript" src="../../../MathJax/MathJax.js"></script>
+</head>
+<body>
+    <script>
+        document.body.style.backgroundColor="#6cc0e5";
+    </script>
+    <p>
+    <script type="math/tex; mode=display">
+        y(x,t) = A\cos \left[ {\omega \left( {{x \over v} - t} \right)} \right]\\[1cm]
+        y(x,t) = A\cos 2\pi f\left( {{x \over v} - t} \right)\\[1cm]
+        y(x,t) = A\cos 2\pi \left( {{x \over \lambda } - {t \over T}} \right)\\[1cm]
+        y(x,t) = A\cos 2\pi \left( {kx - \omega t} \right)\\[1cm]
+        k = {{2\pi } \over \lambda }\\[1cm]
+        \omega  = vk \\[1cm]
+        {v_{string}} = \sqrt {{F \over \mu }}\\[1cm]
+    </script>
+    </p>
+</body>
+</html>

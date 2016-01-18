@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title> MathJax </title>
+    <style type="text/css">
+        p{font-size:25}
+        body { background-image:url("../../../equationBackgound.png"); }
+    </style>
+    <style id="hide-math">
+        math {display:none}
+    </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Register.StartupHook("NativeMML Jax Ready",function () {
+           document.getElementById("hide-math").disabled = true;
+        });
+        MathJax.Hub.Config({
+           extensions: ["tex2jax.js"],
+           jax: ["input/TeX", "output/HTML-CSS"],
+           tex2jax: {
+           preview: "none",
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+           processEscapes: true },
+           messageStyle: "none",
+           displayAlign: "left",
+           "HTML-CSS": { imageFont: null }
+        });
+        </script>
+    <script type="text/javascript" src="../../../MathJax/MathJax.js"></script>
+</head>
+<body>
+    <script>
+        
+    </script>
+    <p>
+    <script type="math/tex; mode=display">
+        {R_n} = \sum\limits_{i = 1}^n {f({x_i})\Delta x}\\[1cm]
+        {L_n} = \sum\limits_{i = 0}^{n - 1} {f({x_i})\Delta x}\\[1cm]
+        {M_n} = \sum\limits_{i = 1}^n {f({x_i})} \Delta x\\[1cm]
+        {T_n} = {1 \over 2}({L_n} + {R_n})\\[1cm]
+        {S_n} = {1 \over 3}{T_n} + {2 \over 3}{M_n}\\[1cm]
+    </script>
+    </p>
+</body>
+</html>

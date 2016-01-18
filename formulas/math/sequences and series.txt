@@ -1,0 +1,5 @@
+Sum of geometric series
+Ratio test
+Taylor series
+Power series
+Binomial series

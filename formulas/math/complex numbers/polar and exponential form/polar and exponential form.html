@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title> MathJax </title>
+    <style type="text/css">
+        p{font-size:25}
+        body { background-image:url("../../../equationBackgound.png"); }
+    </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+           extensions: ["tex2jax.js"],
+           jax: ["input/TeX", "output/HTML-CSS"],
+           tex2jax: {
+            preview: "none",
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+           processEscapes: true },
+           messageStyle: "none",
+           displayAlign: "left",
+           "HTML-CSS": { imageFont: null }
+        });
+        </script>
+    <script type="text/javascript" src="../../../MathJax/MathJax.js"></script>
+</head>
+<body>
+    <p>
+    <script type="math/tex; mode=display">
+        \left| z \right| = \sqrt {{a^2} + {b^2}} \\[1cm]
+        z = \left| z \right|(\cos \theta  + (\sin \theta )i)\\[1cm]
+        z = \left| z \right|{e^{i\theta }}\\[1cm]
+        </script>
+    </p>
+</body>
+</html>

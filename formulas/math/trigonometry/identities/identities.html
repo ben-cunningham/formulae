@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title> MathJax </title>
+    <style type="text/css">
+        p{font-size:25}
+        body { background-image:url("../../../equationBackgound.png"); }
+    </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+           extensions: ["tex2jax.js"],
+           jax: ["input/TeX", "output/HTML-CSS"],
+           tex2jax: {
+           preview: "none",
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+           processEscapes: true },
+           messageStyle: "none",
+           displayAlign: "left",
+           "HTML-CSS": { imageFont: null }
+        });
+        </script>
+    <script type="text/javascript" src="../../../MathJax/MathJax.js"></script>
+</head>
+<body>
+    <script>
+//      document.body.style.backgroundColor="#6cc0e5";
+    </script>
+    <p>
+    <script type="math/tex; mode=display">
+        {\sin ^2}\theta  + {\cos ^2}\theta  = 1\\[1cm]
+        1 + {\tan ^2}\theta  = {\sec ^2}\theta \\[1cm]
+        {\sin ^2}\theta  = {{1 - \cos 2\theta } \over 2}\\[1cm]
+        {\cos ^2}\theta  = {{1 + \cos 2\theta } \over 2}\\[1cm]
+        \sin 2\theta  = 2\sin \theta \cos \theta \\[1cm]
+        \cos 2\theta  = 1 - 2{\sin ^2}\theta \\[1cm]
+    </script>
+    </p>
+</body>
+</html>

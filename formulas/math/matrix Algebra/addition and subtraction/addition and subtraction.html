@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title> MathJax </title>
+    <style type="text/css">
+        p{font-size:25}
+        body { background-image:url("../../../equationBackgound.png"); }
+    </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+           extensions: ["tex2jax.js"],
+           jax: ["input/TeX", "output/HTML-CSS"],
+           tex2jax: {
+           preview: "none",
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+           processEscapes: true },
+           messageStyle: "none",
+           displayAlign: "center",
+           "HTML-CSS": { imageFont: null }
+        });
+        </script>
+    <script type="text/javascript" src="../../../MathJax/MathJax.js"></script>
+</head>
+<body>
+    <script>
+//      document.body.style.backgroundColor="#6cc0e5";
+    </script>
+    <p>
+    <script type="math/tex; mode=display">
+
+\left( {\matrix{
+        {{a_{00}}} & {{a_{01}}}  \cr
+        {{a_{10}}} & {{a_{11}}}  \cr
+        
+        } } \right) \pm \left( {\matrix{
+                              {{b_{00}}} & {{b_{01}}}  \cr
+                              {{b_{10}}} & {{b_{11}}}  \cr
+                              
+                              } } \right) = \left( {\matrix{
+                                                  {{{(a \pm b)}_{00}}} & {{{(a \pm b)}_{01}}}  \cr 
+                                                  {{{(a \pm b)}_{10}}} & {{{(a \pm b)}_{11}}}  \cr 
+                                                  
+                                                  } } \right)\\[1cm]
+    </script>
+    </p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title> MathJax </title>
+    <style type="text/css">
+        p{font-size:25}
+        body { background-image:url("../../../equationBackgound.png"); }
+    </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+           extensions: ["tex2jax.js"],
+           jax: ["input/TeX", "output/HTML-CSS"],
+           tex2jax: {
+           preview: "none",
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+           processEscapes: true },
+           messageStyle: "none",
+           displayAlign: "left",
+           "HTML-CSS": { imageFont: null }
+        });
+        </script>
+    <script type="text/javascript" src="../../../MathJax/MathJax.js"></script>
+</head>
+<body>
+    <script>
+//      document.body.style.backgroundColor="#6cc0e5";
+    </script>
+    <p>
+    <script type="math/tex; mode=display">
+        S{A_{circle}} = \pi {r^2}\\[1cm]
+        S{A_{triangle}} = {{bh} \over 2}\\[1cm]
+        S{A_{trapezoid}} = {{h({b_1} + {b_2})} \over 2}\\[1cm]
+        S{A_{cube}} = 6{x^2}\\[1cm]
+        S{A_{cuboid}} = 2bh + 2bl + 2hl\\[1cm]
+        S{A_{sphere}} = 4\pi {r^2}\\[1cm]
+        S{A_{cylinder}} = 2\pi {r^2} + 2\pi rh\\[1cm]
+    </script>
+    </p>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title> MathJax </title>
+    <style type="text/css">
+        p{font-size:25}
+        body { background-image:url("../../../equationBackgound.png"); }
+        </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+           extensions: ["tex2jax.js"],
+           jax: ["input/TeX", "output/HTML-CSS"],
+           tex2jax: {
+           preview: "none",
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+           processEscapes: true },
+            messageStyle: "none",
+            displayAlign: "left",
+           "HTML-CSS": { imageFont: null }
+        });
+        </script>
+    <script type="text/javascript" src="../../../MathJax/MathJax.js"></script>
+</head>
+<body>
+    <script>
+        document.body.style.backgroundColor="#6cc0e5";
+    </script>
+    <p>
+    <script type="math/tex; mode=display">
+        {F_x} =  - kx\\[1cm]
+        {a_x} = {{{F_x}} \over m} =  - {k \over m}x\\[1cm]
+        \omega  = \sqrt {{k \over m}}\\[1cm]
+        f = {\omega  \over {2\pi }} = {1 \over {2\pi }}\sqrt {{k \over m}}\\[1cm]
+        T = {1 \over f} = 2\pi \sqrt {{m \over k}}\\[1cm]
+        x = \cos (\omega t + \phi )\\[1cm]
+        </script>
+    </p>
+</body>
+</html>

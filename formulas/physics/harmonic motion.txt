@@ -1,0 +1,7 @@
+Periodic motion
+Simple Harmonic motion
+Energy in SHM
+Angular SHM
+Simple pendulum
+Physical pendulum
+Damped oscillation
